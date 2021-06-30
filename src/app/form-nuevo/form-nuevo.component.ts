@@ -11,7 +11,7 @@ import { ContactServerService } from '../contact-server.service';
 })
 export class FormNuevoComponent implements OnInit {
   formData: Contacto={
-    img: '',
+    img: 'assets/img/perfil.jpg',
       nombre: '',
       direccion: '',
       celular: 0,

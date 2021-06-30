@@ -13,35 +13,35 @@ export class ContactServerService {
 
   private _contactos: Contacto[] = [
     {
-      img: '',
+      img: 'assets/img/perfil.jpg',
       nombre: 'oscar',
       direccion: 'peron 528',
       celular: 21212121212,
       empresa: false
     },
     {
-      img: '',
+      img: 'assets/img/perfil.jpg',
       nombre: 'maria',
       direccion: 'letamendi 130',
       celular: 21212121212,
       empresa: true
     },
     {
-      img: '',
+      img: 'assets/img/perfil.jpg',
       nombre: 'camila',
       direccion: 'alcina 45',
       celular: 21212121212,
       empresa: true
     },
     {
-      img: '',
+      img: 'assets/img/perfil.jpg',
       nombre: 'jose',
       direccion: 'san martin 32',
       celular: 21212121212,
       empresa: false
     },
     {
-      img: '',
+      img: 'assets/img/perfil.jpg',
       nombre: 'martin',
       direccion: 'belgrano 23',
       celular: 21212121212,
