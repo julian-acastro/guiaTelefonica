@@ -1,0 +1,35 @@
+<div class="col-12 d-flex justify-content-center">
+  <form (ngSubmit)="saveData(formTemplate)" #formTemplate="ngForm">
+    <div class="mb-3">
+      <label for="nombre" class="form-label">Nombre</label>
+      <input
+        type="text"
+        class="form-control"
+        aria-describedby="text"
+        name="nombre"
+        [ngModel]="formData.nombre"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="direccion" class="form-label">Direccion</label>
+      <input
+        type="text"
+        class="form-control"
+        aria-describedby="text"
+        name="direccion"
+        [ngModel]="formData.direccion"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="telefono" class="form-label">Telefono</label>
+      <input
+        type="number"
+        class="form-control"
+        aria-describedby="number"
+        name="telefono"
+        [ngModel]="formData.celular"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary">agregar</button>
+  </form>
+</div>

@@ -1,0 +1,17 @@
+<div
+  class="row m-1"
+  [ngClass]="{
+    empresa: fav.empresa == true,
+    noempresa: fav.empresa == false
+  }"
+  *ngFor="let fav of favList"
+>
+  <div class="col-8">
+    <h5 class="card-text">{{ fav.nombre }}</h5>
+    <h6 class="card-text">{{ fav.direccion }}</h6>
+    <p class="card-text"><span>Nro. Celular:</span> {{ fav.celular }}.</p>
+  </div>
+  <div class="col-4 d-flex justify-content-center">
+    <a (click)="addToFav(fav)" class="btn btn-danger align-self-center">Quit</a>
+  </div>
+</div>

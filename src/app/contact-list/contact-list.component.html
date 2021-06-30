@@ -1,0 +1,39 @@
+<div class="row d-flex align-items-stretch">
+  <div class="col-8">
+    <div class="d-flex justify-content-between row m-3">
+      <div class="col-6" *ngFor="let contacto of contactos">
+        <div
+          class="card m-1"
+          [ngClass]="{
+            empresa: contacto.empresa == true,
+            noempresa: contacto.empresa == false
+          }"
+          style="max-width: 540px"
+        >
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="..." class="img-fluid rounded-start" alt="..." />
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <h5 class="card-title">{{ contacto.nombre }}</h5>
+                <ul>
+                  <li>{{ contacto.direccion }}</li>
+                  <li>{{ contacto.celular }}</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-1">
+              <button (click)="addToFav(contacto)" class="btn btn-primary">
+                FAV
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-4">
+    <app-contact-fav-list></app-contact-fav-list>
+  </div>
+</div>
