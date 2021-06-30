@@ -50,7 +50,7 @@ export class ContactServerService {
   ];
   contactos: BehaviorSubject<Contacto []>= new BehaviorSubject(this._contactos);
 
-  ver: Contacto | undefined;
+  ver: any;
   constructor() { }
 
   addContacto(contacto:Contacto){
@@ -62,6 +62,7 @@ export class ContactServerService {
 
   addToFav(contacto: Contacto) {
     this.ver = this._favList.find((v1)=> v1.nombre == contacto.nombre);
+    console.log('ver', this.ver)
     if(!this.ver){
       this._favList.push(contacto);
     } else{
@@ -73,6 +74,9 @@ export class ContactServerService {
     }
     this.favList.next(this._favList);
   }
-
+  exist(contacto: Contacto) :boolean{
+    this.ver = this._favList.find((v1)=> v1.nombre == contacto.nombre);
+    return this.ver;
+  }
 
 }

@@ -1,0 +1,16 @@
+<button
+  (click)="addToFav(contacto)"
+  class="btn btn-danger align-self-center"
+  *ngIf="exist(contacto); else elseBlock"
+>
+  Quit
+</button>
+
+<ng-template #elseBlock>
+  <button
+    (click)="addToFav(contacto)"
+    class="btn btn-primary align-self-center"
+  >
+    Fav
+  </button></ng-template
+>

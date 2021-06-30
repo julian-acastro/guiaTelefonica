@@ -12,6 +12,6 @@
     <p class="card-text"><span>Nro. Celular:</span> {{ fav.celular }}.</p>
   </div>
   <div class="col-4 d-flex justify-content-center">
-    <a (click)="addToFav(fav)" class="btn btn-danger align-self-center">Quit</a>
+    <app-btn-fav [contacto]="fav"></app-btn-fav>
   </div>
 </div>

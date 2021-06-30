@@ -11,7 +11,7 @@
           style="max-width: 540px"
         >
           <div class="row g-0">
-            <div class="col-md-4">
+            <div class="col-md-3">
               <img src="..." class="img-fluid rounded-start" alt="..." />
             </div>
             <div class="col-md-7">
@@ -23,10 +23,8 @@
                 </ul>
               </div>
             </div>
-            <div class="col-md-1">
-              <button (click)="addToFav(contacto)" class="btn btn-primary">
-                FAV
-              </button>
+            <div class="col-md-2">
+              <app-btn-fav [contacto]="contacto"></app-btn-fav>
             </div>
           </div>
         </div>

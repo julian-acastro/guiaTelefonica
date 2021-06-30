@@ -17,9 +17,5 @@ export class ContactListComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  addToFav(contacto: Contacto): void {
-    this.contactList.addToFav(contacto);
-
-
-  }
+  
 }
